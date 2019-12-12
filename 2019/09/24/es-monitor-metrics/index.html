@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Elasticsearch集群关注指标 | Skate or Die</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="需要持续关注的Elasticsearch集群指标">
+<meta name="keywords" content="Elasticsearch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Elasticsearch集群关注指标">
+<meta property="og:url" content="http:&#x2F;&#x2F;gtexpanse.com&#x2F;2019&#x2F;09&#x2F;24&#x2F;es-monitor-metrics&#x2F;index.html">
+<meta property="og:site_name" content="Skate or Die">
+<meta property="og:description" content="需要持续关注的Elasticsearch集群指标">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-12T02:26:46.487Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Skate or Die" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Skate or Die</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://gtexpanse.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-es-monitor-metrics" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/24/es-monitor-metrics/" class="article-date">
+  <time datetime="2019-09-24T07:06:59.000Z" itemprop="datePublished">2019-09-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Elasticsearch集群关注指标
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>需要持续关注的Elasticsearch集群指标</p>
+<a id="more"></a>
+
+<h2 id="基础监控-运维监控"><a href="#基础监控-运维监控" class="headerlink" title="基础监控(运维监控)"></a>基础监控(运维监控)</h2><ul>
+<li>CPU使用率</li>
+<li>IO</li>
+<li>内存</li>
+<li>load</li>
+<li>磁盘空间</li>
+<li>JVM</li>
+</ul>
+<h2 id="网关监控"><a href="#网关监控" class="headerlink" title="网关监控"></a>网关监控</h2><ul>
+<li>RT</li>
+<li>状态码</li>
+<li>当RT &gt; 1s 或者出现5XX的时候</li>
+</ul>
+<h2 id="日志监控"><a href="#日志监控" class="headerlink" title="日志监控"></a>日志监控</h2><ul>
+<li>ES出现error日志</li>
+</ul>
+<h2 id="集群指标监控"><a href="#集群指标监控" class="headerlink" title="集群指标监控"></a>集群指标监控</h2><ul>
+<li>集群级别监控<ol>
+<li>status，集群健康状态</li>
+<li>nodes，节点数</li>
+</ol>
+</li>
+<li>node级别监控<ol>
+<li>indices</li>
+<li>thread_pool</li>
+<li>fielddata_breaker</li>
+</ol>
+</li>
+<li>index级别监控<br>基本上没有意义</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://gtexpanse.com/2019/09/24/es-monitor-metrics/" data-id="ck423tcid0001xy5b0x2odyfx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Elasticsearch/" rel="tag">Elasticsearch</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/24/invoke-dubbo-with-commandline/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Dubbo命令行调用
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Australia/" rel="tag">Australia</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dubbo/" rel="tag">Dubbo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Elasticsearch/" rel="tag">Elasticsearch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IELTS/" rel="tag">IELTS</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Australia/" style="font-size: 10px;">Australia</a> <a href="/tags/Dubbo/" style="font-size: 10px;">Dubbo</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/IELTS/" style="font-size: 10px;">IELTS</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/11/28/ielts-resorces/">雅思资料</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/au-info/">AU打分</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/24/invoke-dubbo-with-commandline/">Dubbo命令行调用</a>
+          </li>
+        
+          <li>
+            <a href="/2019/09/24/es-monitor-metrics/">Elasticsearch集群关注指标</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Tristan Liu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
