@@ -5,16 +5,16 @@
   
 
   
-  <title>用Github存放Hexo源码 | Skate or Die</title>
+  <title>使用Github同步Hexo源码 | Skate or Die</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Github存放Hexo的源码">
+  <meta name="description" content="使用Github多端同步Hexo的源码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用Github存放Hexo源码">
+<meta property="og:title" content="使用Github同步Hexo源码">
 <meta property="og:url" content="http:&#x2F;&#x2F;gtexpanse.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;save-hexo-source-with-github&#x2F;index.html">
 <meta property="og:site_name" content="Skate or Die">
-<meta property="og:description" content="使用Github存放Hexo的源码">
+<meta property="og:description" content="使用Github多端同步Hexo的源码">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-12T02:36:22.732Z">
+<meta property="og:updated_time" content="2019-12-16T08:18:05.040Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Skate or Die" type="application/atom+xml">
@@ -76,7 +76,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      用Github存放Hexo源码
+      使用Github同步Hexo源码
     </h1>
   
 
@@ -84,12 +84,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>使用Github存放Hexo的源码</p>
+        <p>使用Github多端同步Hexo的源码</p>
+<a id="more"></a>
+
+<p>由于Github Pages是指定使用master分支的，所以同步源码的原理就是在项目下新建一个<code>source</code>分支保存源码。</p>
+<h2 id="新建源码分支"><a href="#新建源码分支" class="headerlink" title="新建源码分支"></a>新建源码分支</h2><p>基于master分支新建保存源码的分支，步骤略<br>添加.gitignore，内容如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置Hexo-deploy分支"><a href="#设置Hexo-deploy分支" class="headerlink" title="设置Hexo deploy分支"></a>设置Hexo deploy分支</h2><p>Hexo默认的deploy分支就是master，这里可以不用去动</p>
+<p>Enjoy it.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gtexpanse.com/2019/12/12/save-hexo-source-with-github/" data-id="ck4242pnu0007hu5bdgcn6k18" class="article-share-link">Share</a>
+      <a data-url="http://gtexpanse.com/2019/12/12/save-hexo-source-with-github/" data-id="ck4861ja90001mc5b0i8v21c8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -152,7 +160,7 @@
       <ul>
         
           <li>
-            <a href="/2019/12/12/save-hexo-source-with-github/">用Github存放Hexo源码</a>
+            <a href="/2019/12/12/save-hexo-source-with-github/">使用Github同步Hexo源码</a>
           </li>
         
           <li>
