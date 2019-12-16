@@ -83,16 +83,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>使用Github多端同步Hexo的源码</p>
-        
-          <p class="article-more-link">
-            <a href="/2019/12/12/save-hexo-source-with-github/#more">Read More</a>
-          </p>
-        
+        <a id="more"></a>
+
+<p>由于Github Pages是指定使用master分支的，所以同步源码的原理就是在项目下新建一个分支单独保存源码。</p>
+<h1 id="新建源码分支"><a href="#新建源码分支" class="headerlink" title="新建源码分支"></a>新建源码分支</h1><ul>
+<li><p>基于master分支新建保存源码的分支，步骤略</p>
+</li>
+<li><p>添加.gitignore，内容如下:</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
+
+<h1 id="设置Hexo-deploy分支"><a href="#设置Hexo-deploy分支" class="headerlink" title="设置Hexo deploy分支"></a>设置Hexo deploy分支</h1><p>Hexo默认的deploy分支就是master，这里可以不用去动</p>
+<h1 id="Enjoy-it"><a href="#Enjoy-it" class="headerlink" title="Enjoy it."></a>Enjoy it.</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gtexpanse.com/2019/12/12/save-hexo-source-with-github/" data-id="ck4861ja90001mc5b0i8v21c8" class="article-share-link">Share</a>
+      <a data-url="http://gtexpanse.com/2019/12/12/save-hexo-source-with-github/" data-id="ck486a3hd000cua5b71isdbmm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gtexpanse.com/2019/11/28/ielts-resorces/" data-id="ck4861ja20000mc5bh8tc599z" class="article-share-link">Share</a>
+      <a data-url="http://gtexpanse.com/2019/11/28/ielts-resorces/" data-id="ck486a3h40003ua5b3h1icl9g" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IELTS/" rel="tag">IELTS</a></li></ul>
@@ -177,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gtexpanse.com/2019/11/26/au-info/" data-id="ck4861jae0004mc5b3mazd3ud" class="article-share-link">Share</a>
+      <a data-url="http://gtexpanse.com/2019/11/26/au-info/" data-id="ck486a3gw0000ua5bf7z33aat" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Australia/" rel="tag">Australia</a></li></ul>
@@ -220,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gtexpanse.com/2019/09/24/invoke-dubbo-with-commandline/" data-id="ck4861jad0003mc5bbklh3pbr" class="article-share-link">Share</a>
+      <a data-url="http://gtexpanse.com/2019/09/24/invoke-dubbo-with-commandline/" data-id="ck486a3h50004ua5bhitihhwh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dubbo/" rel="tag">Dubbo</a></li></ul>
@@ -263,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://gtexpanse.com/2019/09/24/es-monitor-metrics/" data-id="ck4861jaf0005mc5b2cu06h39" class="article-share-link">Share</a>
+      <a data-url="http://gtexpanse.com/2019/09/24/es-monitor-metrics/" data-id="ck486a3h10001ua5b6k3q4j06" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Elasticsearch/" rel="tag">Elasticsearch</a></li></ul>
